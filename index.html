@@ -1,1 +1,9 @@
-<!DOCTYPE html><html><head><title>Welcome</title></head><body><h1>Добро пожаловать!</h1><p>This is a simple landing page for OpenClaw.</p></body></html>
+<!DOCTYPE html><html><head><title>Welcome</title></head><body><h1>Добро пожаловать!</h1><p>This is a simple landing page for OpenClaw.</p><button id="playBtn" style="margin-top:20px;padding:10px;font-size:16px;">Play Tetris</button>
+<script>
+  document.getElementById('playBtn').addEventListener('click', () => {
+    const s = document.createElement('script');
+    s.src = 'tetris.js';
+    document.body.appendChild(s);
+  });
+</script>
+</body></html>
